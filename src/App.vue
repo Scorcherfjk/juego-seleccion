@@ -1,11 +1,16 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link class="uppercase" to="/">inicio</router-link> |
-      <router-link class="uppercase" to="/opciones">+ opciones</router-link> |
-      <router-link class="uppercase" to="/ganadores">ganadores</router-link> |
-      <router-link class="uppercase" to="/historial">historial</router-link>
-    </div>
+  <div class="h-screen p-4 bg-blue-200" id="app">
+    <Header />
     <router-view />
   </div>
 </template>
+
+<script>
+import Header from '@/components/Header';
+
+export default {
+  components: {
+    Header
+  }
+};
+</script>

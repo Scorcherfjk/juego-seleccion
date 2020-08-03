@@ -1,5 +1,15 @@
 <template>
   <div class="about">
-    <h1>This is an historial page</h1>
+    <Card msg="historial" />
   </div>
 </template>
+
+<script>
+import Card from '../components/Card';
+
+export default {
+  components: {
+    Card
+  }
+};
+</script>

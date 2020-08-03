@@ -1,5 +1,15 @@
 <template>
   <div class="about">
-    <h1>This is an ganadores page</h1>
+    <Card msg="ganadores" />
   </div>
 </template>
+
+<script>
+import Card from '../components/Card';
+
+export default {
+  components: {
+    Card
+  }
+};
+</script>
