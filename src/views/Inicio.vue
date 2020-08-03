@@ -1,5 +1,15 @@
 <template>
   <div class="about">
-    <h1>This is an inicio page</h1>
+    <Game />
   </div>
 </template>
+
+<script>
+import Game from '../components/Game';
+
+export default {
+  components: {
+    Game
+  }
+};
+</script>
