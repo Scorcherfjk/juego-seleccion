@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .app{
-  @apply h-screen p-4 bg-blue-200;
+  @apply min-h-screen p-4 bg-blue-200;
 }
 
 .navbar {
@@ -41,7 +41,7 @@
 }
 
 .game__option__content{
-  @apply h-32 w-3/4 mx-auto bg-blue-700 bg-opacity-75;
+  @apply block h-32 w-3/4 mx-auto bg-blue-700 bg-opacity-75;
 }
 
 .card{
