@@ -1,6 +1,6 @@
 <template>
-  <div class="about">
-    <Card msg="ganadores" />
+  <div class="options">
+    <Card msg="¡gana más opciones!" />
   </div>
 </template>
 

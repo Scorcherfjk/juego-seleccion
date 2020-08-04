@@ -1,34 +1,34 @@
-import Vue from "vue";
-import VueRouter from "vue-router";
-import Inicio from "../views/Inicio.vue";
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Home from '../views/Home.vue';
 
 Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
-    name: "Inicio",
-    component: Inicio
+    path: '/',
+    name: 'Home',
+    component: Home
   },
   {
-    path: "/opciones",
-    name: "Opciones",
-    component: () => import("../views/Opciones.vue")
+    path: '/options',
+    name: 'Options',
+    component: () => import('../views/Options.vue')
   },
   {
-    path: "/ganadores",
-    name: "Ganadores",
-    component: () => import("../views/Ganadores.vue")
+    path: '/winners',
+    name: 'Winners',
+    component: () => import('../views/Winners.vue')
   },
   {
-    path: "/historial",
-    name: "Historial",
-    component: () => import("../views/Historial.vue")
+    path: '/history',
+    name: 'History',
+    component: () => import('../views/History.vue')
   }
 ];
 
 const router = new VueRouter({
-  mode: "history",
+  mode: 'history',
   base: process.env.BASE_URL,
   routes
 });

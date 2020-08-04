@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full flex flex-wrap justify-center">
+  <div class="game">
     <Options />
     <Options />
     <Options />
