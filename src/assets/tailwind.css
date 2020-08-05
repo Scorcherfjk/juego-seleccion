@@ -45,9 +45,29 @@
 }
 
 .card{
-  @apply absolute h-64 w-11/12 mt-4 bg-black bg-opacity-75 rounded-lg;
+  @apply absolute h-auto w-11/12 mt-4 bg-black bg-opacity-75 rounded-lg;
 }
 
 .card__title{
-  @apply relative -m-3 w-2/3 p-1 mx-auto rounded-md uppercase text-center bg-white;
+  @apply relative -m-4 w-2/3 p-1 mx-auto rounded-md uppercase text-center bg-white border-t-4 border-blue-500;
+}
+
+.card__children{
+  @apply mx-4 mt-10 mb-4;
+}
+
+.card__children__group{
+  @apply flex justify-between items-baseline mb-1 w-full px-2 py-3 border-2 rounded-lg text-white;
+}
+
+.card__children__group__icon{
+  @apply  text-xl
+}
+
+.card__children__group__title{
+  @apply text-xs
+}
+
+.card__children__group__points{
+  @apply uppercase text-xs text-yellow-500
 }
