@@ -3,6 +3,7 @@
     <div class="card__title">
       {{ msg }}
     </div>
+    <slot></slot>
   </div>
 </template>
 
