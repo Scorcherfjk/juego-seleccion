@@ -3,7 +3,7 @@
   <div class="options">
     <Card msg="¡gana más opciones!">
       <div class="card__children">
-        <TextField :color="'text-white'">
+        <CustomText :color="'text-white'">
           Mientras más
           <span class="text-yellow-500 font-bold">Opciones</span>, más
           posibilidades de ganar un viaje a
@@ -11,7 +11,7 @@
           <p class="text-xs">
             Promoción válida desde 01/01/2020 hasta 31/12/2020
           </p>
-        </TextField>
+        </CustomText>
         <InfoBoxExpanded
           icon="fa-whatsapp"
           colorIcon="text-green-500"
@@ -32,13 +32,13 @@
 
 <script>
 import Card from '../components/Card';
-import TextField from '../components/TextField';
+import CustomText from '../components/CustomText';
 import InfoBoxExpanded from '../components/InfoBox_expanded';
 
 export default {
   components: {
     Card,
-    TextField,
+    CustomText,
     InfoBoxExpanded
   },
   data() {
