@@ -18,3 +18,21 @@
     </router-link>
   </div>
 </template>
+
+<style lang="postcss" scoped>
+.navbar {
+  @apply flex items-center justify-around h-16 w-full mx-auto mb-4 p-1 bg-white rounded-lg text-xs;
+}
+
+.navbar__option {
+  @apply flex flex-col px-1 no-underline;
+}
+
+.navbar__option__icon {
+  @apply text-center text-xl;
+}
+
+.navbar__option__title {
+  @apply uppercase font-semibold text-gray-900;
+}
+</style>
