@@ -39,3 +39,9 @@ export default {
   }
 };
 </script>
+
+<style lang="postcss" scoped>
+.game {
+  @apply w-full flex flex-wrap justify-center;
+}
+</style>
