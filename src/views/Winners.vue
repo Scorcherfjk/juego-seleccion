@@ -6,17 +6,12 @@
         <CustomText>
           ¡Felicitaciones! Nos contactaremos en un plazo máximo de 14 días.
         </CustomText>
-        <div class="card__children__group">
-          <div class="flex w-full justify-between items-center">
-            <p class="card__children__group__title">
-              Pedro Pérez <br />
-              01/08/2020
-            </p>
-            <p class="card__children__group__points ">
-              Punta sal
-            </p>
-          </div>
-        </div>
+        <InfoBox
+          :hasIcon="false"
+          message="Pedro Pérez 01/08/2020"
+          :points="null"
+          prize="Punta sal"
+        />
         <CustomText :uppercase="true">
           ¡sigue ganando opciones!
         </CustomText>
@@ -46,11 +41,13 @@
 <script>
 import Card from '../components/Card';
 import CustomText from '../components/CustomText';
+import InfoBox from '../components/InfoBox';
 
 export default {
   components: {
     Card,
-    CustomText
+    CustomText,
+    InfoBox
   }
 };
 </script>
