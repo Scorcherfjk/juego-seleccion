@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-4 text-white text-center">
+  <div class="custom-text">
     <p :class="baseClass">
       <slot></slot>
     </p>
@@ -13,7 +13,7 @@ export default {
     color: String
   },
   data() {
-    let baseClass = 'text-sm mb-2';
+    let baseClass = 'custom-text__description';
 
     baseClass = this.$props.uppercase ? `${baseClass} uppercase` : baseClass;
     baseClass = this.$props.color
@@ -27,3 +27,13 @@ export default {
   computed: {}
 };
 </script>
+
+<style lang="postcss" scoped>
+.custom-text {
+  @apply mb-4 text-white text-center;
+}
+
+.custom-text__description {
+  @apply text-sm mb-2;
+}
+</style>
