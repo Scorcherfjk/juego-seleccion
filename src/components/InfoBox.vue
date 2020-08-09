@@ -1,8 +1,8 @@
 <template>
   <div class="info-box">
-    <i :class="`info-box__icon fa ${icon} ${colorIcon}`"></i>
+    <i v-if="hasIcon" :class="`info-box__icon fa ${icon} ${colorIcon}`"></i>
     <p class="info-box__title ">{{ message }}</p>
-    <p class="info-box__points ">{{ points }} opciones</p>
+    <p class="info-box__points ">{{ points }} {{ prize }}</p>
   </div>
 </template>
 
@@ -13,6 +13,10 @@ export default {
       type: String,
       default: 'fa-paw'
     },
+    hasIcon: {
+      type: Boolean,
+      default: true
+    },
     colorIcon: {
       type: String,
       default: 'text-yellow-500'
@@ -22,8 +26,11 @@ export default {
       default: 'Comparte tu código'
     },
     points: {
-      type: Number,
-      required: true
+      type: Number
+    },
+    prize: {
+      type: String,
+      default: 'opciones'
     }
   }
 };
