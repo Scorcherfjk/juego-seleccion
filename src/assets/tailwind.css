@@ -11,19 +11,3 @@
 .card__children{
   @apply mx-4 mt-10 mb-4;
 }
-
-.card__children__group{
-  @apply flex justify-between items-baseline mb-1 w-full px-2 py-3 border-2 rounded-lg text-white;
-}
-
-.card__children__group__icon{
-  @apply  text-xl
-}
-
-.card__children__group__title{
-  @apply text-xs
-}
-
-.card__children__group__points{
-  @apply uppercase text-xs text-yellow-500
-}
