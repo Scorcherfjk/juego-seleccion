@@ -1,38 +1,30 @@
 <template>
-  <div class="card__children__group flex-col">
-    <div class="flex w-full justify-around items-center">
-      <i
-        :class="`card__children__group__icon fa ${icon} ${colorIcon} mr-2`"
-      ></i>
-      <p class="card__children__group__title">
+  <div class="info-box-expanded">
+    <div class="info-box-expanded__preview">
+      <i :class="`info-box-expanded__icon fa ${icon} ${colorIcon} mr-2`"></i>
+      <p class="info-box-expanded__title">
         {{ message }}
       </p>
       <p
-        class="card__children__group__title text-right text-yellow-500 uppercase mr-2"
+        class="info-box-expanded__title text-right text-yellow-500 uppercase mr-2"
       >
         {{ points }} opciones por persona
       </p>
       <button @click="openClose">
-        <i
-          class="card__children__group__icon fa fa-chevron-down text-white"
-        ></i>
+        <i class="info-box-expanded__icon fa fa-chevron-down text-white"></i>
       </button>
     </div>
-    <div
-      class="h-48 w-full mt-4 py-2 flex flex-col items-center justify-around border-t-2"
-      v-show="open"
-    >
-      <p class="text-xs">
-        Comparte el código <i>"{{ userCode }}"</i> con tus amigos. Cada amigo
-        que ingrese te dará {{ points }} OPCIONES
+    <div class="info-box-expanded__detail" v-show="open">
+      <p class="info-box-expanded__detail__description">
+        Comparte el código
+        <span class="font-bold italic">{{ userCode }}</span> con tus amigos.
+        Cada amigo que ingrese te dará {{ points }} OPCIONES
       </p>
-      <div class="w-3/4 border px-4 py-2 rounded-full flex justify-around">
+      <div class="info-box-expanded__state">
         <span>amigos</span>
         <span>opciones</span>
       </div>
-      <button
-        class="w-2/4 py-1 px-4 uppercase border-2 border-green-300 text-green-300 rounded-lg"
-      >
+      <button class="info-box-expanded__share">
         compartir
       </button>
     </div>
@@ -76,3 +68,41 @@ export default {
   }
 };
 </script>
+
+<style lang="postcss" scoped>
+.info-box-expanded {
+  @apply flex flex-col justify-between items-center mb-1 w-full px-2 py-3 border-2 rounded-lg text-white;
+}
+
+.info-box-expanded__preview {
+  @apply flex w-full justify-around items-center;
+}
+
+.info-box-expanded__detail {
+  @apply h-48 w-full mt-4 py-2 flex flex-col items-center justify-around border-t-2;
+}
+
+.info-box-expanded__detail__description {
+  @apply text-xs;
+}
+
+.info-box-expanded__state {
+  @apply w-3/4 border px-4 py-2 rounded-full flex justify-around;
+}
+
+.info-box-expanded__share {
+  @apply w-2/4 py-1 px-4 uppercase border-2 border-green-300 text-green-300 rounded-lg;
+}
+
+.info-box-expanded__icon {
+  @apply text-xl;
+}
+
+.info-box-expanded__title {
+  @apply text-xs;
+}
+
+.info-box-expanded__points {
+  @apply uppercase w-16 text-right text-xs text-yellow-500;
+}
+</style>
