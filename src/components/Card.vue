@@ -14,3 +14,13 @@ export default {
   }
 };
 </script>
+
+<style lang="postcss" scoped>
+.card {
+  @apply absolute h-auto w-11/12 mt-4 bg-black bg-opacity-75 rounded-lg;
+}
+
+.card__title {
+  @apply relative -m-4 w-2/3 p-1 mx-auto rounded-md uppercase text-center bg-white border-t-4 border-blue-500;
+}
+</style>
