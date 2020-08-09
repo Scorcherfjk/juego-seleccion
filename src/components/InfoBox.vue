@@ -1,8 +1,8 @@
 <template>
-  <div class="card__children__group">
-    <i :class="`card__children__group__icon fa ${icon} ${colorIcon}`"></i>
-    <p class="card__children__group__title ">{{ message }}</p>
-    <p class="card__children__group__points ">{{ points }} opciones</p>
+  <div class="info-box">
+    <i :class="`info-box__icon fa ${icon} ${colorIcon}`"></i>
+    <p class="info-box__title ">{{ message }}</p>
+    <p class="info-box__points ">{{ points }} opciones</p>
   </div>
 </template>
 
@@ -28,3 +28,21 @@ export default {
   }
 };
 </script>
+
+<style lang="postcss" scoped>
+.info-box {
+  @apply flex justify-between items-center mb-1 w-full px-2 py-3 border-2 rounded-lg text-white;
+}
+
+.info-box__icon {
+  @apply text-xl;
+}
+
+.info-box__title {
+  @apply text-xs;
+}
+
+.info-box__points {
+  @apply uppercase w-16 text-right text-xs text-yellow-500;
+}
+</style>
