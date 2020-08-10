@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import Game from '../components/game/Game';
-import Countdown from '../components/game/Coundown';
+import Game from '@/components/game/Game';
+import Countdown from '@/components/game/Coundown';
 
 export default {
   components: {
