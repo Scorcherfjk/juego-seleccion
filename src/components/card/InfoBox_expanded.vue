@@ -17,8 +17,8 @@
     <div class="info-box-expanded__detail" v-show="open">
       <p class="info-box-expanded__detail__description">
         Comparte el código
-        <span class="font-bold italic">{{ userCode }}</span> con tus amigos.
-        Cada amigo que ingrese te dará {{ points }} OPCIONES
+        <span>{{ userCode }}</span> con tus amigos. Cada amigo que ingrese te
+        dará {{ points }} OPCIONES
       </p>
       <div class="info-box-expanded__state">
         <span>amigos</span>
@@ -84,6 +84,10 @@ export default {
 
 .info-box-expanded__detail__description {
   @apply text-xs;
+}
+
+.info-box-expanded__detail__description span {
+  @apply font-bold italic;
 }
 
 .info-box-expanded__state {
