@@ -39,9 +39,9 @@
 </template>
 
 <script>
-import Card from '../components/Card';
-import CustomText from '../components/CustomText';
-import InfoBox from '../components/InfoBox';
+import Card from '../components/card/Card';
+import CustomText from '../components/card/CustomText';
+import InfoBox from '../components/card/InfoBox';
 
 export default {
   components: {

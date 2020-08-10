@@ -2,7 +2,7 @@
 <template>
   <div class="options">
     <Card msg="¡gana más opciones!">
-      <div class="card__children">
+      <div class="card__children h-64">
         <CustomText :color="'text-white'">
           Mientras más
           <span class="text-yellow-500 font-bold">Opciones</span>, más
@@ -31,9 +31,9 @@
 </template>
 
 <script>
-import Card from '../components/Card';
-import CustomText from '../components/CustomText';
-import InfoBoxExpanded from '../components/InfoBox_expanded';
+import Card from '../components/card/Card';
+import CustomText from '../components/card/CustomText';
+import InfoBoxExpanded from '../components/card/InfoBox_expanded';
 
 export default {
   components: {

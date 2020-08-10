@@ -13,7 +13,7 @@ export default {
   },
   data() {
     return {
-      points: [0, 30, 12, 14]
+      points: [0, 30, 12]
     };
   },
   computed: {
