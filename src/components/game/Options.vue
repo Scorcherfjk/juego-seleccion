@@ -3,18 +3,28 @@
     <button class="game__option__content" @click="addPoint">
       <i class="fa fa-question game__option__icon" aria-hidden="true"></i>
     </button>
+    <Modal v-show="modal" :points="value" />
   </div>
 </template>
 
 <script>
+import Modal from '@/components/game/Modal';
+
 export default {
   props: {
     value: Number
   },
+  data() {
+    return {
+      modal: false
+    };
+  },
+  components: {
+    Modal
+  },
   methods: {
     addPoint() {
-      this.$store.dispatch('addPoints', this.$props.value);
-      this.$store.dispatch('startCountdown');
+      this.modal = true;
     }
   }
 };
