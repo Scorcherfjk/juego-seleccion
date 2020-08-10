@@ -9,5 +9,5 @@
 }
 
 .card__children{
-  @apply mx-4 mt-10 mb-4;
+  @apply h-56 overflow-y-scroll mx-4 mt-10 mb-4;
 }
