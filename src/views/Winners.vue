@@ -1,6 +1,7 @@
 // TODO: optimización de tarjeta de texto
 <template>
   <div class="winners">
+    <i class="fa fa-trophy winners__icon"></i>
     <Card msg="ganadores">
       <div class="card__children">
         <CustomText>
@@ -51,3 +52,9 @@ export default {
   }
 };
 </script>
+
+<style lang="postcss" scoped>
+.winners__icon {
+  @apply w-full text-center text-6xl text-yellow-600 -mb-2;
+}
+</style>
