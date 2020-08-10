@@ -24,6 +24,7 @@ export default {
   },
   methods: {
     addPoint() {
+      this.$store.dispatch('addPoints', this.$props.value);
       this.modal = true;
     }
   }
