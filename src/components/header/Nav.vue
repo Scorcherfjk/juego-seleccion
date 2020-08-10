@@ -6,7 +6,7 @@
     </router-link>
     <router-link class="navbar__option" to="/options">
       <i class="navbar__option__icon fa fa-flag text-orange-600"></i>
-      <p class="navbar__option__title">+ opciones</p>
+      <p class="navbar__option__title">+opciones</p>
     </router-link>
     <router-link class="navbar__option" to="/winners">
       <i class="navbar__option__icon fa fa-trophy text-yellow-600"></i>
@@ -21,7 +21,7 @@
 
 <style lang="postcss" scoped>
 .navbar {
-  @apply flex items-center justify-around h-16 w-full mx-auto mb-4 p-1 bg-white rounded-lg text-xs;
+  @apply flex items-center justify-around h-16 w-full mx-auto mb-4 p-1 bg-white rounded-full text-xs;
 }
 
 .navbar__option {
@@ -34,5 +34,9 @@
 
 .navbar__option__title {
   @apply uppercase font-semibold text-gray-900;
+}
+
+.router-link-exact-active {
+  @apply border-b-2 border-blue-700 rounded;
 }
 </style>
