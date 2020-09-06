@@ -6,7 +6,7 @@
     </router-link>
     <router-link class="navbar__option" to="/options">
       <i class="navbar__option__icon fa fa-flag text-orange-600"></i>
-      <p class="navbar__option__title">+opciones</p>
+      <p class="navbar__option__title">+puntos</p>
     </router-link>
     <router-link class="navbar__option" to="/winners">
       <i class="navbar__option__icon fa fa-trophy text-yellow-600"></i>

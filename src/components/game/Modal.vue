@@ -5,16 +5,17 @@
       <p class="modal__message__title">¡bien hecho!</p>
       <p class="modal__message__description">
         Has ganado
-        <span>{{ points }} opciones</span>
+        <span>{{ points }} puntos</span>
       </p>
     </div>
+    s
     <div class="modal__buttons">
       <button class="modal__buttons__continue" @click="continuePlaying">
         continuar
       </button>
       <router-link class="w-5/12" to="/options">
         <button class="modal__buttons__options" @click="continuePlaying">
-          más opciones
+          más puntos
         </button>
       </router-link>
     </div>

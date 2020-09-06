@@ -1,7 +1,7 @@
 <template>
   <div class="counter">
     <p class="counter__title">
-      {{ $store.state.points }} opciones
+      {{ $store.state.points }} puntos
       <i class="fa fa-paw"></i>
     </p>
   </div>

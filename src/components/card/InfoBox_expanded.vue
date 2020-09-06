@@ -8,7 +8,7 @@
       <p
         class="info-box-expanded__title text-right text-yellow-500 uppercase mr-2"
       >
-        {{ points }} opciones por persona
+        {{ points }} puntos por persona
       </p>
       <button @click="openClose">
         <i class="info-box-expanded__icon fa fa-chevron-down text-white"></i>
@@ -17,12 +17,12 @@
     <div class="info-box-expanded__detail" v-show="open">
       <p class="info-box-expanded__detail__description">
         Comparte el código
-        <span>{{ userCode }}</span> con tus amigos. Cada amigo que ingrese te
-        dará {{ points }} OPCIONES
+        <span>{{ userCode }}</span> con tus amigos. Cada amigo que te dará
+        {{ points }} PUNTOS
       </p>
       <div class="info-box-expanded__state">
         <span>amigos</span>
-        <span>opciones</span>
+        <span>puntos</span>
       </div>
       <button class="info-box-expanded__share">
         compartir

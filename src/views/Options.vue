@@ -1,13 +1,13 @@
 // TODO: optimización de tarjeta que abre y cierra
 <template>
   <div class="options">
-    <Card msg="¡gana más opciones!">
+    <Card msg="¡gana más puntos!">
       <div class="card__children h-64">
         <CustomText :color="'text-white'">
           Mientras más
-          <span class="text-yellow-500 font-bold">Opciones</span>, más
-          posibilidades de ganar un viaje a
-          <span class="text-yellow-500 font-bold">Punta sal y S/ 1000</span>.
+          <span class="text-yellow-500 font-bold">Puntos</span>, más
+          posibilidades de ganar
+          <span class="text-yellow-500 font-bold"> $1000</span>.
           <p class="text-xs">
             Promoción válida desde 01/01/2020 hasta 31/12/2020
           </p>
