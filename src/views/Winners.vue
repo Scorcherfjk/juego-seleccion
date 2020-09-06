@@ -11,7 +11,7 @@
           :hasIcon="false"
           message="Pedro Pérez 01/08/2020"
           :points="null"
-          prize="Punta sal"
+          prize="$1000"
         />
         <CustomText :uppercase="true">
           ¡sigue ganando opciones!
